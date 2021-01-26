@@ -1,0 +1,29 @@
+{
+  "name": "demo-threejs-ts",
+  "version": "1.0.0",
+  "description": "quick threejs demo over Ts",
+  "scripts": {
+    "dev" : "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tul1/demo-threejs-ts.git"
+  },
+  "author": "Patricio Tula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tul1/demo-threejs-ts/issues"
+  },
+  "homepage": "https://github.com/tul1/demo-threejs-ts#readme",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.22",
+    "express": "^4.17.1",
+    "three": "^0.124.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  }
+}
